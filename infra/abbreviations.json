@@ -1,0 +1,13 @@
+{
+  "storageAccounts": "st",
+  "keyVault": "kv",
+  "cognitiveServices": "cog",
+  "containerApps": "ca",
+  "containerAppsEnvironments": "cae",
+  "logAnalyticsWorkspaces": "log",
+  "managedIdentity": "id",
+  "resourceGroups": "rg",
+  "cosmosDBAccount": "cosmos",
+  "appServicePlans": "asp",
+  "webSites": "app"
+}

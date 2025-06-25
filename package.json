@@ -1,0 +1,33 @@
+{
+  "name": "azure-lens",
+  "version": "1.0.0",
+  "description": "Azure Lens - AI-powered visual search and analysis platform",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "mobile-app"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:mobile\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:mobile": "cd mobile-app && npx expo start",
+    "build:backend": "cd backend && npm run build",
+    "build:mobile": "cd mobile-app && npx expo build",
+    "install:all": "npm install && cd backend && npm install && cd ../mobile-app && npm install",
+    "clean": "rm -rf node_modules && cd backend && rm -rf node_modules && cd ../mobile-app && rm -rf node_modules"
+  },
+  "keywords": [
+    "azure",
+    "ai",
+    "computer-vision",
+    "react-native",
+    "expo",
+    "mobile-app"
+  ],
+  "author": "Azure Lens Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "concurrently": "^8.2.2"
+  }
+}
